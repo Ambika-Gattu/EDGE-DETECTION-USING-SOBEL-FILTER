@@ -39,15 +39,6 @@ Input images are preprocessed in MATLAB<br>
 Output edges are compared against the hardware-generated results<br>
 Pixel-by-pixel comparison used for accuracy evaluation<br>
 
-FPGA Implementation Summary<br>
-Metric               Result<br>
-LUT Utilization      ~5%<br>
-Flip-Flops (FF)      ~1%<br>
-DSP/BRAM Usage       ~1%<br>
-IO Usage             ~8%<br>
-Timing Violations    None<br>
-Power Consumption    ~21W (99% dynamic)<br>
-
 Conclusion<br>
 The Sobel filter was selected and implemented on FPGA due to its accuracy, noise robustness, and hardware-friendly design. This Verilog-based edge detection system performs well under resource constraints while maintaining high responsiveness. The Zynq-7000 SoC platform enables future integration with ARM-side applications for complete embedded vision pipelines.<br>
 This design is suitable for deployment in robotics, medical imaging, surveillance, and autonomous systems requiring low-latency, hardware-level image preprocessing.<br>
